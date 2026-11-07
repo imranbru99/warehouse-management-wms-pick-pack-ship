@@ -1,0 +1,29 @@
+{
+    "key": "inbound",
+    "name": "Inbound / Receiving",
+    "description": "POs, ASNs, receiving, QC, directed putaway",
+    "icon": "heroicon-o-truck",
+    "version": "1.0.0",
+    "dependencies": [
+        "warehouse",
+        "products"
+    ],
+    "is_core": false,
+    "permissions": [
+        "inbound.view",
+        "inbound.create",
+        "inbound.update",
+        "inbound.delete",
+        "inbound.export",
+        "inbound.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Purchase orders",
+        "ASN",
+        "Blind/guided receive",
+        "QC inspection",
+        "Putaway engine"
+    ],
+    "sort_order": 3
+}

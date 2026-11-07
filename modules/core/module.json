@@ -1,0 +1,29 @@
+{
+    "key": "core",
+    "name": "Core Platform",
+    "description": "Tenancy, users, roles, settings, audit, media, search, imports",
+    "icon": "heroicon-o-cog-6-tooth",
+    "version": "1.0.0",
+    "dependencies": [],
+    "is_core": true,
+    "permissions": [
+        "core.view",
+        "core.create",
+        "core.update",
+        "core.delete",
+        "core.export",
+        "core.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Users & roles",
+        "2FA auth",
+        "Audit log",
+        "Notifications",
+        "Media manager",
+        "Custom fields",
+        "Import/Export",
+        "Command palette"
+    ],
+    "sort_order": 0
+}

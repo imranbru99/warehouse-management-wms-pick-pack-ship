@@ -1,0 +1,28 @@
+{
+    "key": "ai",
+    "name": "AI Assistant & Intelligence",
+    "description": "NL assistant, forecasting, slotting, OCR via AI Hub",
+    "icon": "heroicon-o-sparkles",
+    "version": "1.0.0",
+    "dependencies": [
+        "products"
+    ],
+    "is_core": false,
+    "permissions": [
+        "ai.view",
+        "ai.create",
+        "ai.update",
+        "ai.delete",
+        "ai.export",
+        "ai.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "NL assistant",
+        "Forecasting",
+        "Slotting AI",
+        "OCR extraction",
+        "Catalog enrichment"
+    ],
+    "sort_order": 22
+}

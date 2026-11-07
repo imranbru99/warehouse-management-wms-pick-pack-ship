@@ -1,0 +1,26 @@
+{
+    "key": "safety",
+    "name": "Safety & Incidents",
+    "description": "Incidents, near-miss, inspections, training",
+    "icon": "heroicon-o-exclamation-triangle",
+    "version": "1.0.0",
+    "dependencies": [
+        "core"
+    ],
+    "is_core": false,
+    "permissions": [
+        "safety.view",
+        "safety.create",
+        "safety.update",
+        "safety.delete",
+        "safety.export",
+        "safety.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Incident reports",
+        "Checklists",
+        "Training records"
+    ],
+    "sort_order": 18
+}

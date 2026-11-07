@@ -1,0 +1,26 @@
+{
+    "key": "data_mgmt",
+    "name": "Data Management",
+    "description": "Bulk import, archive, trash, tenant ZIP export",
+    "icon": "heroicon-o-circle-stack",
+    "version": "1.0.0",
+    "dependencies": [
+        "core"
+    ],
+    "is_core": false,
+    "permissions": [
+        "data_mgmt.view",
+        "data_mgmt.create",
+        "data_mgmt.update",
+        "data_mgmt.delete",
+        "data_mgmt.export",
+        "data_mgmt.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Import wizards",
+        "Archive/restore",
+        "Tenant export"
+    ],
+    "sort_order": 24
+}

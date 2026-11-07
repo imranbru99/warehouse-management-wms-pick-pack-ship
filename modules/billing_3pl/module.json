@@ -1,0 +1,27 @@
+{
+    "key": "billing_3pl",
+    "name": "3PL Billing",
+    "description": "Client segregation, rate cards, usage metering, invoices",
+    "icon": "heroicon-o-banknotes",
+    "version": "1.0.0",
+    "dependencies": [
+        "inventory"
+    ],
+    "is_core": false,
+    "permissions": [
+        "billing_3pl.view",
+        "billing_3pl.create",
+        "billing_3pl.update",
+        "billing_3pl.delete",
+        "billing_3pl.export",
+        "billing_3pl.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Client inventory",
+        "Rate cards",
+        "Auto invoices",
+        "Statements"
+    ],
+    "sort_order": 12
+}

@@ -1,0 +1,27 @@
+{
+    "key": "notifications",
+    "name": "Notifications",
+    "description": "Email, in-app, SMS/WhatsApp/Slack hooks and digests",
+    "icon": "heroicon-o-bell",
+    "version": "1.0.0",
+    "dependencies": [
+        "core"
+    ],
+    "is_core": false,
+    "permissions": [
+        "notifications.view",
+        "notifications.create",
+        "notifications.update",
+        "notifications.delete",
+        "notifications.export",
+        "notifications.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Templates",
+        "Channels",
+        "Preferences",
+        "Digests"
+    ],
+    "sort_order": 21
+}

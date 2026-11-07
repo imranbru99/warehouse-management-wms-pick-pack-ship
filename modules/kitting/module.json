@@ -1,0 +1,28 @@
+{
+    "key": "kitting",
+    "name": "Kitting & Light Manufacturing",
+    "description": "BOMs, work orders, component pick, finished goods putaway",
+    "icon": "heroicon-o-puzzle-piece",
+    "version": "1.0.0",
+    "dependencies": [
+        "inventory",
+        "products"
+    ],
+    "is_core": false,
+    "permissions": [
+        "kitting.view",
+        "kitting.create",
+        "kitting.update",
+        "kitting.delete",
+        "kitting.export",
+        "kitting.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Bill of materials",
+        "Work orders",
+        "Kit builds",
+        "Yield tracking"
+    ],
+    "sort_order": 8
+}

@@ -1,0 +1,29 @@
+{
+    "key": "outbound",
+    "name": "Orders, Allocation & Pick",
+    "description": "Sales orders, allocation strategies, waves, pick path optimization",
+    "icon": "heroicon-o-clipboard-document-list",
+    "version": "1.0.0",
+    "dependencies": [
+        "inventory",
+        "products"
+    ],
+    "is_core": false,
+    "permissions": [
+        "outbound.view",
+        "outbound.create",
+        "outbound.update",
+        "outbound.delete",
+        "outbound.export",
+        "outbound.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Sales orders",
+        "Allocation engine",
+        "Wave planning",
+        "Pick strategies",
+        "RF pick confirm"
+    ],
+    "sort_order": 5
+}

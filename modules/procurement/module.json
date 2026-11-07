@@ -1,0 +1,27 @@
+{
+    "key": "procurement",
+    "name": "Procurement Planning",
+    "description": "Forecasts, reorder suggestions, auto-PO drafts",
+    "icon": "heroicon-o-shopping-cart",
+    "version": "1.0.0",
+    "dependencies": [
+        "inbound",
+        "products"
+    ],
+    "is_core": false,
+    "permissions": [
+        "procurement.view",
+        "procurement.create",
+        "procurement.update",
+        "procurement.delete",
+        "procurement.export",
+        "procurement.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Demand forecast",
+        "Reorder suggestions",
+        "RFQ basics"
+    ],
+    "sort_order": 13
+}

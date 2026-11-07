@@ -1,0 +1,27 @@
+{
+    "key": "reporting",
+    "name": "Reporting & Analytics",
+    "description": "KPI dashboards, custom reports, scheduled email exports",
+    "icon": "heroicon-o-chart-bar",
+    "version": "1.0.0",
+    "dependencies": [
+        "core"
+    ],
+    "is_core": false,
+    "permissions": [
+        "reporting.view",
+        "reporting.create",
+        "reporting.update",
+        "reporting.delete",
+        "reporting.export",
+        "reporting.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Report library",
+        "Custom builder",
+        "Scheduled reports",
+        "Dashboards"
+    ],
+    "sort_order": 19
+}

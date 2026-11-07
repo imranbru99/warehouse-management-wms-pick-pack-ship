@@ -1,0 +1,17 @@
+{
+  "name": "WMS RF Scanner",
+  "short_name": "WMS RF",
+  "description": "Warehouse RF scanner for receive, putaway, pick, pack, and count",
+  "start_url": "/rf",
+  "scope": "/rf",
+  "display": "standalone",
+  "background_color": "#064e3b",
+  "theme_color": "#059669",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}

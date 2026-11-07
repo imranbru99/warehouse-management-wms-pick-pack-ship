@@ -1,0 +1,26 @@
+{
+    "key": "automation",
+    "name": "Automation & Workflow",
+    "description": "No-code rules, approvals, scheduled automations",
+    "icon": "heroicon-o-bolt",
+    "version": "1.0.0",
+    "dependencies": [
+        "core"
+    ],
+    "is_core": false,
+    "permissions": [
+        "automation.view",
+        "automation.create",
+        "automation.update",
+        "automation.delete",
+        "automation.export",
+        "automation.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Event rules",
+        "Approval chains",
+        "Templates"
+    ],
+    "sort_order": 20
+}

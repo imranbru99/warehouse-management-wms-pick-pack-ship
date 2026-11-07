@@ -1,0 +1,27 @@
+{
+    "key": "yard",
+    "name": "Yard & Dock Scheduling",
+    "description": "Dock doors, appointments, detention, yard locations",
+    "icon": "heroicon-o-calendar-days",
+    "version": "1.0.0",
+    "dependencies": [
+        "inbound"
+    ],
+    "is_core": false,
+    "permissions": [
+        "yard.view",
+        "yard.create",
+        "yard.update",
+        "yard.delete",
+        "yard.export",
+        "yard.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Dock calendar",
+        "Carrier booking",
+        "Check-in/out",
+        "Detention"
+    ],
+    "sort_order": 10
+}

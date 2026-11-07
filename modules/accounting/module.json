@@ -1,0 +1,27 @@
+{
+    "key": "accounting",
+    "name": "Accounting & ERP Hooks",
+    "description": "Exports to QuickBooks/Xero/Odoo and journal/tax support",
+    "icon": "heroicon-o-calculator",
+    "version": "1.0.0",
+    "dependencies": [
+        "inventory"
+    ],
+    "is_core": false,
+    "permissions": [
+        "accounting.view",
+        "accounting.create",
+        "accounting.update",
+        "accounting.delete",
+        "accounting.export",
+        "accounting.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "ERP adapters",
+        "Journal export",
+        "Tax rates",
+        "Multi-currency"
+    ],
+    "sort_order": 15
+}

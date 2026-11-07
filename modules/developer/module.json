@@ -1,0 +1,27 @@
+{
+    "key": "developer",
+    "name": "Developer Platform",
+    "description": "API tokens, webhooks, OpenAPI, sandbox, SDKs",
+    "icon": "heroicon-o-code-bracket",
+    "version": "1.0.0",
+    "dependencies": [
+        "core"
+    ],
+    "is_core": false,
+    "permissions": [
+        "developer.view",
+        "developer.create",
+        "developer.update",
+        "developer.delete",
+        "developer.export",
+        "developer.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "API tokens",
+        "Webhooks",
+        "OpenAPI",
+        "Rate limits"
+    ],
+    "sort_order": 23
+}

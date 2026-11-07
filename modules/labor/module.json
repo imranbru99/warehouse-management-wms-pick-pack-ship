@@ -1,0 +1,27 @@
+{
+    "key": "labor",
+    "name": "Labor & Attendance",
+    "description": "Shifts, attendance machines, productivity vs pick/pack",
+    "icon": "heroicon-o-user-group",
+    "version": "1.0.0",
+    "dependencies": [
+        "core"
+    ],
+    "is_core": false,
+    "permissions": [
+        "labor.view",
+        "labor.create",
+        "labor.update",
+        "labor.delete",
+        "labor.export",
+        "labor.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Device registry",
+        "Attendance sync",
+        "Shifts & OT",
+        "Productivity KPIs"
+    ],
+    "sort_order": 11
+}

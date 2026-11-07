@@ -1,0 +1,30 @@
+{
+    "key": "inventory",
+    "name": "Inventory Control",
+    "description": "Ledger, adjustments, transfers, cycle counts, replenishment, valuation",
+    "icon": "heroicon-o-archive-box",
+    "version": "1.0.0",
+    "dependencies": [
+        "warehouse",
+        "products"
+    ],
+    "is_core": false,
+    "permissions": [
+        "inventory.view",
+        "inventory.create",
+        "inventory.update",
+        "inventory.delete",
+        "inventory.export",
+        "inventory.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Stock ledger",
+        "Adjustments",
+        "Transfers",
+        "Cycle counting",
+        "Replenishment",
+        "Valuation"
+    ],
+    "sort_order": 4
+}

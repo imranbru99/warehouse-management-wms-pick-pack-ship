@@ -1,0 +1,146 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "imrandevbd/warehouse-management-wms",
+    "type": "project",
+    "description": "Warehouse Management (WMS): bin locations, pick, pack, ship — multi-tenant SaaS by Imran Dev BD",
+    "keywords": ["wms", "warehouse", "laravel", "filament", "multi-tenant"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Imran Ahmed",
+            "email": "me@imrandev.bd",
+            "homepage": "https://imrandev.bd"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "filament/filament": "^5.11",
+        "imrandevbd/drutogoti": "*@dev",
+        "imrandevbd/laravel-admin-panel": "*@dev",
+        "imrandevbd/laravel-ai-catalog": "dev-main",
+        "imrandevbd/laravel-ai-hub": "^1.7.3",
+        "imrandevbd/laravel-attendance-hub": "*@dev",
+        "imrandevbd/laravel-unicode-pdf": "dev-main",
+        "imrandevbd/laravel-universal-slug": "dev-main",
+        "laravel/framework": "^13.17",
+        "laravel/horizon": "^5.40",
+        "laravel/reverb": "^1.0",
+        "laravel/sanctum": "^4.0",
+        "laravel/scout": "^10.0",
+        "laravel/tinker": "^3.0",
+        "livewire/livewire": "^4.0",
+        "spatie/laravel-activitylog": "^4.12|^5.0",
+        "spatie/laravel-backup": "^10.0",
+        "spatie/laravel-medialibrary": "^11.23",
+        "spatie/laravel-permission": "^8.0",
+        "spatie/laravel-settings": "^3.9"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23",
+        "larastan/larastan": "^3.0",
+        "laravel/boost": "^2.10",
+        "laravel/pail": "^1.2.5",
+        "laravel/pao": "^1.0.6",
+        "laravel/pint": "^1.27",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.6",
+        "pestphp/pest": "^4.7",
+        "pestphp/pest-plugin-laravel": "^4.1",
+        "pestphp/pest-plugin-livewire": "^4.1"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/drutogoti",
+            "options": { "symlink": true }
+        },
+        {
+            "type": "path",
+            "url": "packages/laravel-admin-panel",
+            "options": { "symlink": true }
+        },
+        {
+            "type": "path",
+            "url": "packages/laravel-attendance-hub",
+            "options": { "symlink": true }
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/",
+            "Modules\\": "modules/"
+        },
+        "files": [
+            "app/Support/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "setup": [
+            "composer install",
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php artisan key:generate",
+            "@php artisan migrate --force",
+            "npm install --ignore-scripts",
+            "npm run build"
+        ],
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "@php artisan dev"
+        ],
+        "test": [
+            "@php artisan config:clear --ansi @no_additional_args",
+            "@php artisan test"
+        ],
+        "analyse": [
+            "@php vendor/bin/phpstan analyse --memory-limit=2G"
+        ],
+        "lint": [
+            "@php vendor/bin/pint --test"
+        ],
+        "fix": [
+            "@php vendor/bin/pint"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi",
+            "@php artisan filament:upgrade"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi",
+            "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
+            "@php artisan migrate --graceful --ansi"
+        ],
+        "pre-package-uninstall": [
+            "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

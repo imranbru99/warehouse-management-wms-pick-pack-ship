@@ -1,0 +1,27 @@
+{
+    "key": "saas_billing",
+    "name": "Subscription & Billing",
+    "description": "Plans, seats, Stripe + BD gateways, usage metering",
+    "icon": "heroicon-o-credit-card",
+    "version": "1.0.0",
+    "dependencies": [
+        "core"
+    ],
+    "is_core": false,
+    "permissions": [
+        "saas_billing.view",
+        "saas_billing.create",
+        "saas_billing.update",
+        "saas_billing.delete",
+        "saas_billing.export",
+        "saas_billing.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Plans & trials",
+        "Stripe",
+        "Usage metering",
+        "Dunning"
+    ],
+    "sort_order": 25
+}

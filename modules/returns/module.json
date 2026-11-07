@@ -1,0 +1,27 @@
+{
+    "key": "returns",
+    "name": "Returns / RMA",
+    "description": "Return requests, inspection, disposition, analytics",
+    "icon": "heroicon-o-arrow-uturn-left",
+    "version": "1.0.0",
+    "dependencies": [
+        "pack_ship"
+    ],
+    "is_core": false,
+    "permissions": [
+        "returns.view",
+        "returns.create",
+        "returns.update",
+        "returns.delete",
+        "returns.export",
+        "returns.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "RMA workflow",
+        "Return receiving",
+        "Disposition",
+        "Refund hooks"
+    ],
+    "sort_order": 7
+}

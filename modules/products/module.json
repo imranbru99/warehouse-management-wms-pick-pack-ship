@@ -1,0 +1,28 @@
+{
+    "key": "products",
+    "name": "Product & Item Master",
+    "description": "SKUs, variants, barcodes, lots, serials, UoM, AI catalog import",
+    "icon": "heroicon-o-cube",
+    "version": "1.0.0",
+    "dependencies": [
+        "core"
+    ],
+    "is_core": false,
+    "permissions": [
+        "products.view",
+        "products.create",
+        "products.update",
+        "products.delete",
+        "products.export",
+        "products.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "SKUs & variants",
+        "Barcodes & GS1",
+        "Lot/serial/expiry",
+        "UoM conversions",
+        "AI catalog fill"
+    ],
+    "sort_order": 2
+}

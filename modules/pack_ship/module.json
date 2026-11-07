@@ -1,0 +1,29 @@
+{
+    "key": "pack_ship",
+    "name": "Pack & Ship",
+    "description": "Pack stations, cartonization, labels, carriers, loads, tracking",
+    "icon": "heroicon-o-gift",
+    "version": "1.0.0",
+    "dependencies": [
+        "outbound"
+    ],
+    "is_core": false,
+    "permissions": [
+        "pack_ship.view",
+        "pack_ship.create",
+        "pack_ship.update",
+        "pack_ship.delete",
+        "pack_ship.export",
+        "pack_ship.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Pack stations",
+        "Cartonization",
+        "Shipping labels",
+        "Rate shopping",
+        "Manifests & BOL",
+        "Public tracking"
+    ],
+    "sort_order": 6
+}

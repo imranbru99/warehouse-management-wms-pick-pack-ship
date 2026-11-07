@@ -1,0 +1,26 @@
+{
+    "key": "equipment",
+    "name": "Equipment & Assets",
+    "description": "Forklifts, scanners, printers, maintenance",
+    "icon": "heroicon-o-wrench-screwdriver",
+    "version": "1.0.0",
+    "dependencies": [
+        "core"
+    ],
+    "is_core": false,
+    "permissions": [
+        "equipment.view",
+        "equipment.create",
+        "equipment.update",
+        "equipment.delete",
+        "equipment.export",
+        "equipment.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Asset registry",
+        "Maintenance",
+        "Check-out/in"
+    ],
+    "sort_order": 17
+}

@@ -1,0 +1,27 @@
+{
+    "key": "crossdock",
+    "name": "Cross-Docking",
+    "description": "Inbound-to-outbound flow-through and staging lanes",
+    "icon": "heroicon-o-arrows-right-left",
+    "version": "1.0.0",
+    "dependencies": [
+        "inbound",
+        "outbound"
+    ],
+    "is_core": false,
+    "permissions": [
+        "crossdock.view",
+        "crossdock.create",
+        "crossdock.update",
+        "crossdock.delete",
+        "crossdock.export",
+        "crossdock.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Direct allocation",
+        "Staging lanes",
+        "Same-day flow"
+    ],
+    "sort_order": 9
+}

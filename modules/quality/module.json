@@ -1,0 +1,26 @@
+{
+    "key": "quality",
+    "name": "Quality & Compliance",
+    "description": "Holds, NCR/CAPA, certificates, temperature, traceability",
+    "icon": "heroicon-o-shield-check",
+    "version": "1.0.0",
+    "dependencies": [
+        "inventory"
+    ],
+    "is_core": false,
+    "permissions": [
+        "quality.view",
+        "quality.create",
+        "quality.update",
+        "quality.delete",
+        "quality.export",
+        "quality.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Inspection plans",
+        "NCR/CAPA",
+        "Traceability packs"
+    ],
+    "sort_order": 16
+}

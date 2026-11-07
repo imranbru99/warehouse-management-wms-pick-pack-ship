@@ -1,0 +1,27 @@
+{
+    "key": "channels",
+    "name": "Order Channel Integrations",
+    "description": "Shopify, WooCommerce, marketplaces, CSV/FTP connectors",
+    "icon": "heroicon-o-globe-alt",
+    "version": "1.0.0",
+    "dependencies": [
+        "outbound"
+    ],
+    "is_core": false,
+    "permissions": [
+        "channels.view",
+        "channels.create",
+        "channels.update",
+        "channels.delete",
+        "channels.export",
+        "channels.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Shopify",
+        "WooCommerce",
+        "Inventory sync",
+        "Fulfillment push"
+    ],
+    "sort_order": 14
+}

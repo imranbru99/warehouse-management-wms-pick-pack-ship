@@ -1,0 +1,29 @@
+{
+    "key": "warehouse",
+    "name": "Warehouse & Bin Locations",
+    "description": "Multi-site warehouses with full bin hierarchy, LPNs, maps, and slotting",
+    "icon": "heroicon-o-building-office-2",
+    "version": "1.0.0",
+    "dependencies": [
+        "core"
+    ],
+    "is_core": false,
+    "permissions": [
+        "warehouse.view",
+        "warehouse.create",
+        "warehouse.update",
+        "warehouse.delete",
+        "warehouse.export",
+        "warehouse.approve"
+    ],
+    "settings_schema": [],
+    "features": [
+        "Warehouse hierarchy",
+        "Bin locations",
+        "Capacity & restrictions",
+        "Visual map",
+        "LPN containers",
+        "Location labels"
+    ],
+    "sort_order": 1
+}
